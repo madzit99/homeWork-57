@@ -35,11 +35,13 @@ const UserForm: React.FC<Props> = ({ onSubmit }) => {
 
   const onFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onSubmit({
-      id: Math.random().toString(),
-      ...user,
-    });
-    setUser(initialState);
+    if (user.name && user.email && user.role) {
+      onSubmit({
+        id: Math.random().toString(),
+        ...user,
+      });
+      setUser(initialState);
+    }
   };
 
   return (
