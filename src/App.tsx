@@ -1,5 +1,6 @@
 import ToolBar from "./Components/ToolBar/ToolBar";
 import UserForm from "./Components/UserForm/UserForm";
+import Users from "./Components/Users/Users";
 
 const App = () => {
   return (
@@ -13,7 +14,9 @@ const App = () => {
             <div className="col-6">
               <UserForm/>
             </div>
-            <div className="col-6">users</div>
+            <div className="col-6">
+              <Users/>
+            </div>
           </div>
         </div>
       </main>
