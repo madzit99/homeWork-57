@@ -1,9 +1,24 @@
+import ToolBar from "./Components/ToolBar/ToolBar";
+import UserForm from "./Components/UserForm/UserForm";
 
-
-function App() {
+const App = () => {
   return (
-<div>App</div>
-  )
-}
+    <>
+      <header>
+        <ToolBar />
+      </header>
+      <main>
+        <div className="container">
+          <div className="row">
+            <div className="col-6">
+              <UserForm/>
+            </div>
+            <div className="col-6">users</div>
+          </div>
+        </div>
+      </main>
+    </>
+  );
+};
 
-export default App
+export default App;
